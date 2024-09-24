@@ -26,15 +26,15 @@ export default function Footer(){
                         Find me at : 
                     </h2>
                     <div className="flex gap-3 text-5xl">
-                        <a className="md:text-white md:hover:text-green-400 text-green-400" href="https://wa.me/+6281298208096" target="_blank">
+                        <a className="md:text-white md:hover:text-green-500 text-green-500" href="https://wa.me/+6281298208096" target="_blank">
                             {iconWhatsapp}
                         </a>
 
-                        <a className="md:text-white md:hover:text-blue-300 text-blue-300" href="mailto:galihrizkyfahrezy@gmail.com" target="_blank">
+                        <a className="md:text-white md:hover:text-blue-500 text-blue-500" href="mailto:galihrizkyfahrezy@gmail.com" target="_blank">
                             {iconEmail}
                         </a>
 
-                        <a className="md:text-white md:hover:text-pink-300 text-pink-300" href="https://www.instagram.com/galihhomina/" target="_blank">
+                        <a className="md:text-white md:hover:text-pink-500 text-pink-500" href="https://www.instagram.com/galihhomina/" target="_blank">
                             {iconInstagram}
                         </a>
                     </div>
