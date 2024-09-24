@@ -4,48 +4,74 @@ import { Link } from "react-router-dom";
 
 export default function Main(){
 
+    const style001={
+        transform: 'rotateY(160deg)',
+        position: 'absolute',
+    };
 
-    const [character, setCharacter] = useState('abcs');
+    const style002 = {
+        position: 'absolute',
+        bottom: '0',
+        right: '0',
+    }
 
-    const create = 'createa ';
+    const [character, setCharacter] = useState('');
+    const [counter, setCounter] = useState(0); 
+
 
     function tes(){
         
-        if(character.length < create.length - 1)
-        {
-            
-
-            
-            setTimeout(() => 
-                {   
-
-                    setCharacter(c => c + create[c.length]);
-
-                },200
-            );
-        }
-        else{
-            /*
-                setTimeout(() => 
-                    {   
-                        setCharacter(character => character[character.length - 1 ] + '1')
-                    },200
-                );
-                */
-                setCharacter(character => character = '')
-
+        switch (counter) {
+            case 0:
+                add('create     ');
+                break;
+            case 1:
+                add('code     ');
+                break;
+            case 2:
+                add('make     ');
+                break;
+            case 3:
+                add('do it better     ');
+                break;
+              
+            default:
+                setCounter(counter => counter = 0);
         }
     }
+    
 
-    function add(callback)
+    function add(word)
     {
-        () => callback()
+        if(character.length < word.length - 1)
+            {
+                setTimeout(() => 
+                    {   
+                        setCharacter(c => c + word[c.length]);
+                    },100
+                );
+            }
+            else{
+                    setCounter(counter => counter + 1)
+                    setCharacter(character => character = '')
+            }
     }
 
     return(
         <>
+        <div className="flex" style={style001}>
+            <div  className="triangle-right"></div>
+            <div  className="triangle-right"></div>
+
+        </div>
+
+        <div className="flex" style={style002}>
+            <div  className="triangle-right"></div>
+            <div  className="triangle-right"></div>
+
+        </div>
+        
         {tes()}
-        <button onClick={() =>tes()}>asdf</button>
         <div className="w-screen h-screen flex">
             <div className="mx-auto my-auto font-serif">
                 <div className="py-10">

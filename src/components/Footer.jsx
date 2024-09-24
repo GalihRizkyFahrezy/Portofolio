@@ -3,7 +3,6 @@ export default function Footer(){
         <>
             <div className="bg-black text-white">
                 Phone : asdf
-
             </div>
         </>
     );
