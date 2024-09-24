@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBootstrap, faCss3, faGitAlt, faJs, faLaravel, faPhp, faReact } from '@fortawesome/free-brands-svg-icons';
 import { faHtml5 } from '@fortawesome/free-brands-svg-icons/faHtml5';
@@ -11,6 +11,11 @@ export default function About()
     const arrow1 = {
         bottom: '20%',
     }
+
+    const [buttonSelect, setButtonSelect] = useState(1);
+    const buttonClass = "border-b-2 border-transparent hover:border-violet-500 duration-150"
+    const buttonClass2 = 'text-violet-800 border-b-2 border-violet-500'
+    console.log(buttonSelect)
 
     const iconHTML = <FontAwesomeIcon icon={faHtml5} />
     const iconCSS = <FontAwesomeIcon icon={faCss3} />
@@ -28,14 +33,81 @@ export default function About()
 
     return(
     <>
-        <div className='bg-slate-200 my-5 font-serif'>
-            <div className='container mx-auto'>
-                <div>
-                    Welcome to my portofolio! I might still an entry level programmer but i always try my best to be a better programmer.
-
-                    Below you will find my previous sample and work.
-                </div>
+        <div className='bg-black my-5 font-serif text-slate-200 text-center py-2'>
+            <div>
+                "Everything comes from idea and imagination"
             </div>
+        </div>
+        
+        <div className='container mx-auto bg-slate-200 rounded-lg my-3'>
+            <div className="">
+                <ul className=" container mx-auto flex space-x-5 font-bold p-3">
+                    <li>
+                        <button onClick={() => setButtonSelect(1)} className={buttonSelect == 1 ? buttonClass2 : buttonClass}>
+                            About
+                        </button>
+                    </li>
+                    <li>
+                        <button onClick={() => setButtonSelect(2)} className={buttonSelect == 2 ? buttonClass2 : buttonClass}>
+                            Resources
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            
+            <div className={buttonSelect == 1 ? '' : 'hidden'}>
+                <p className='p-3 border-b-4'>
+                    Hello.
+                    <br/>
+                    <br/>
+                    I am Galih. I am a web developer and enjoy coding since my school days. Below this you can find my sample and work of web development.
+                    <br/>
+                    Feel free to contact me at anytime, even if you just want to chit chat!
+                    <br/>
+                    <br/>
+                    Sinceliry, Galih RF.
+                </p>
+            </div>
+            <div className={buttonSelect == 2 ? '' : 'hidden'}>
+                <div className='grid md:grid-cols-4 grid-cols-2 py-5 px-7 text-center'>
+                            <div className='text-2xl hovering text-orange-500'>
+                                {iconHTML} HTML
+                            </div>
+                            <div className='text-2xl hovering text-blue-500'>
+                                {iconCSS} CSS
+                            </div>
+                            <div className='text-2xl hovering text-blue-500'>
+                                {iconBootstrap} Bootstrap
+                            </div>
+                            <div className='text-2xl hovering text-blue-400'>
+                                {iconCode} Tailwind
+                            </div>
+                            <div className='text-2xl hovering text-yellow-400'>
+                                {iconJavascript} Javascript
+                            </div>
+                            <div className='text-2xl hovering'>
+                                {iconReact} React JS
+                            </div>
+                            <div className='text-2xl hovering text-violet-800'>
+                                {iconPHP} PHP
+                            </div>
+                            <div className='text-2xl hovering text-red-500'>
+                                {iconLaravel} Laravel
+                            </div><div className='text-2xl hovering'>
+                                {iconDatabase} MySQL
+                            </div>
+                            <div className='text-2xl hovering text-red-700'>
+                                {iconGit} Git
+                            </div>
+                            <div className='text-2xl hovering text-amber-800'>
+                                {iconBrush} Frontend
+                            </div>
+                            <div className='text-2xl hovering text-green-500'>
+                                {iconTerminal} Backend
+                            </div>
+                    </div>
+            </div>
+            
         </div>
 
 
