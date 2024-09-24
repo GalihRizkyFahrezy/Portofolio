@@ -12,10 +12,12 @@ export default function About()
         bottom: '20%',
     }
 
+    /*
     const [buttonSelect, setButtonSelect] = useState(1);
+    console.log(buttonSelect)
+    */
     const buttonClass = "border-b-2 border-transparent hover:border-violet-500 duration-150"
     const buttonClass2 = 'text-violet-800 border-b-2 border-violet-500'
-    console.log(buttonSelect)
 
     const iconHTML = <FontAwesomeIcon icon={faHtml5} />
     const iconCSS = <FontAwesomeIcon icon={faCss3} />
@@ -40,7 +42,7 @@ export default function About()
         </div>
 
         <div className='container mx-auto  my-3 font-serif '>
-            <div className='grid grid-cols-2 gap-3'>
+            <div className='md:grid md:grid-cols-2 gap-3 flex flex-col-reverse'>
                 <p className='p-3 border-b-4 bg-slate-200 rounded-lg'>
                     Hello.
                     <br/>

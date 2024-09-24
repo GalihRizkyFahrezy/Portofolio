@@ -23,18 +23,23 @@ export default function Main(){
         
         switch (counter) {
             case 0:
-                add('create     ');
+                add('code     ');
                 break;
             case 1:
-                add('code     ');
+                add('create     ');
                 break;
             case 2:
                 add('make     ');
                 break;
             case 3:
+                add('fix it     ');
+                break;
+            case 4:
+                add('find it     ');
+                break;
+            case 5:
                 add('do it better     ');
                 break;
-              
             default:
                 setCounter(counter => counter = 0);
         }
@@ -58,13 +63,13 @@ export default function Main(){
 
     return(
         <>
-        <div className="flex" style={style001}>
+        <div className="flex text-violet-300" style={style001}>
             <div  className="triangle-right"></div>
             <div  className="triangle-right"></div>
 
         </div>
 
-        <div className="flex" style={style002}>
+        <div className="flex text-pink-300" style={style002}>
             <div  className="triangle-right"></div>
             <div  className="triangle-right"></div>
 

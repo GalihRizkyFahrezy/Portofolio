@@ -26,18 +26,27 @@ export default function Home(){
             <Main/>
             <About/>
 
-            <div className="container mx-auto grid md:grid-cols-3 grid-cols-2 gap-3">
-            <Link to={'/'}>
-                <Portofolio name='assssd' img='/moon.jpg'/>
-            </Link>
-            <Link to={'/'}>
-                <Portofolio name='assssd' img='/moon.jpg'/>
-            </Link>
-            <Link to={'/'}>
-                <Portofolio name='assssd' img='/moon.jpg'/>
-            </Link>
-        </div>
-        <Footer/>
+            <div className="container mx-auto grid md:grid-cols-4 grid-cols-2 gap-3">
+                <Link to={'/'}>
+                    <Portofolio name='Sample Website 002' img='/portofolioSampleWeb002.png' desc='Sample halaman utama'/>
+                </Link>
+                <Link to={'/'}>
+                    <Portofolio name='Sample Website 001' img='/portofolioSampleWeb001.png' desc='Sample halaman utama'/>
+                </Link>
+                <Link to={'/'}>
+                    <Portofolio name='Weather App' img='/portofolioWeatherApp.png' desc='Aplikasi cuaca berdasarkan kota'/>
+                </Link>
+                <Link to={'/'}>
+                    <Portofolio name='To Do List' img='/portofolioToDoList.png' desc='Aplikasi to do list untuk daftar kegiatan'/>
+                </Link>
+                <Link to={'/'}>
+                    <Portofolio name='Portal Game Sederhana' img='/portofolioPortalGame.png' desc='Website portal game sederhana'/>
+                </Link>
+                <Link to={'/'}>
+                    <Portofolio name='Website Berita Sederhana' img='/portofolioSimpleCrud.png' desc='Website portal berita sederhana'/>
+                </Link>
+            </div>
+            <Footer/>
         </>
     );
 }
