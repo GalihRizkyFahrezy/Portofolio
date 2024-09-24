@@ -33,13 +33,34 @@ export default function About()
 
     return(
     <>
-        <div className='bg-black my-5 font-serif text-slate-200 text-center py-2'>
+        <div className='bg-black my-5 font-serif text-slate-200 text-center py-2 italic'>
             <div>
                 "Everything comes from idea and imagination"
             </div>
         </div>
+
+        <div className='container mx-auto  my-3 font-serif '>
+            <div className='grid grid-cols-2 gap-3'>
+                <p className='p-3 border-b-4 bg-slate-200 rounded-lg'>
+                    Hello.
+                    <br/>
+                    <br/>
+                    I am Galih, a web developer that enjoy coding since my school days. Below this you can find my sample and work of web development.
+                    <br/>
+                    Feel free to contact me at anytime, even if you just want to chit chat!
+                    <br/>
+                    <br/>
+                    sincerely, Galih RF.
+                </p>
+            <div className='rounded-lg'>
+                <img className='rounded-lg w-auto' src="/letter.jpg"></img>
+            </div>
+
+        </div>
         
-        <div className='container mx-auto bg-slate-200 rounded-lg my-3'>
+        
+
+                {/*}
             <div className="">
                 <ul className=" container mx-auto flex space-x-5 font-bold p-3">
                     <li>
@@ -60,55 +81,18 @@ export default function About()
                     Hello.
                     <br/>
                     <br/>
-                    I am Galih. I am a web developer and enjoy coding since my school days. Below this you can find my sample and work of web development.
+                    I am Galih, a web developer that enjoy coding since my school days. Below this you can find my sample and work of web development.
                     <br/>
                     Feel free to contact me at anytime, even if you just want to chit chat!
                     <br/>
                     <br/>
-                    Sinceliry, Galih RF.
+                    sincerely, Galih RF.
                 </p>
             </div>
             <div className={buttonSelect == 2 ? '' : 'hidden'}>
-                <div className='grid md:grid-cols-4 grid-cols-2 py-5 px-7 text-center'>
-                            <div className='text-2xl hovering text-orange-500'>
-                                {iconHTML} HTML
-                            </div>
-                            <div className='text-2xl hovering text-blue-500'>
-                                {iconCSS} CSS
-                            </div>
-                            <div className='text-2xl hovering text-blue-500'>
-                                {iconBootstrap} Bootstrap
-                            </div>
-                            <div className='text-2xl hovering text-blue-400'>
-                                {iconCode} Tailwind
-                            </div>
-                            <div className='text-2xl hovering text-yellow-400'>
-                                {iconJavascript} Javascript
-                            </div>
-                            <div className='text-2xl hovering'>
-                                {iconReact} React JS
-                            </div>
-                            <div className='text-2xl hovering text-violet-800'>
-                                {iconPHP} PHP
-                            </div>
-                            <div className='text-2xl hovering text-red-500'>
-                                {iconLaravel} Laravel
-                            </div><div className='text-2xl hovering'>
-                                {iconDatabase} MySQL
-                            </div>
-                            <div className='text-2xl hovering text-red-700'>
-                                {iconGit} Git
-                            </div>
-                            <div className='text-2xl hovering text-amber-800'>
-                                {iconBrush} Frontend
-                            </div>
-                            <div className='text-2xl hovering text-green-500'>
-                                {iconTerminal} Backend
-                            </div>
-                    </div>
             </div>
-            
-        </div>
+            {*/}
+        
 
 
     {/*}
@@ -203,9 +187,10 @@ export default function About()
                     second
                 </div>
             </div>
+                    {*/}
         </div>
 
-        {*/}
+
     </>
     );
 }

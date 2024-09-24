@@ -40,7 +40,6 @@ export default function Main(){
         }
     }
     
-
     function add(word)
     {
         if(character.length < word.length - 1)
@@ -72,7 +71,7 @@ export default function Main(){
         </div>
         
         {tes()}
-        <div className="w-screen h-screen flex">
+        <div className="w-full h-screen flex">
             <div className="mx-auto my-auto font-serif">
                 <div className="py-10">
                     <div className="text-slate-700 md:text-2xl text-lg pl-10 Animate-RightToLeft">
@@ -88,7 +87,6 @@ export default function Main(){
             </div>
         </div>
 
-        
         </>
     );
 }
