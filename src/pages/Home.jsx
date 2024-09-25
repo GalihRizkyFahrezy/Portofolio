@@ -3,6 +3,7 @@ import Main from "../components/Main";
 import Portofolio from "../components/Portofolio";
 import About from "../components/About";
 import Footer from "../components/Footer";
+import Resources from "../components/Resources";
 
 export default function Home(){
 
@@ -46,6 +47,7 @@ export default function Home(){
                     <Portofolio name='Portal Web' img='/portofolioSimpleCrud.png' desc='News Portal with CSS, Bootstrap, PHP Laravel.'/>
                 </Link>
             </div>
+            <Resources/>
             <Footer/>
         </>
     );
