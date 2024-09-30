@@ -34,7 +34,7 @@ export default function Footer(){
                             {iconEmail}
                         </a>
 
-                        <a className="md:text-white md:hover:text-pink-500 text-pink-500" href="https://github.com/GalihRizkyFahrezy" target="_blank">
+                        <a className="md:text-white md:hover:text-blue-900 text-blue-900" href="https://github.com/GalihRizkyFahrezy" target="_blank">
                             {iconGithub}
                         </a>
                     </div>
